@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --color-principal: #fafafa;
+    --color-secundario: #666666;
+    --color-terceario: #2B29A7;
+    --color-cuartario: #D9D9D9;
+    --color-quinto: #060606;
+
+    --fuente-principal: "Crimson Text", serif;
+    --fuente-secundaria: "Poppins", sans-serif;
+    --fuente-tercearia: "DM Sans", sans-serif;
+    --fuente-cuartaria: "Noto Sans", sans-serif;
+    --fuente-quinta: "Space Grotesk", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-principal);
+    box-sizing: border-box;
+}
+
+.header{
+    margin: 0 4%;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    width:7%;
+}
+
+.header_menu{
+    display: flex;
+    gap: 3.81rem;
+    font-family: var(--fuente-tercearia);
+    color: var(--color-secundario);
+    font-size: 1.25rem;
+}
+
+.header_socials{
+    display: flex;
+    align-items: center;
+    gap: 7%;
+}
+
+.header_cv{
+    background-color: var(--color-terceario);
+    color: var(--color-principal);
+    font-family: var(--fuente-cuartaria);
+    font-weight: 700;
+    padding: 1% 2%;
+    border-radius: 10px;
+}
