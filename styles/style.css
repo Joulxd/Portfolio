@@ -3,7 +3,7 @@
 :root{
     --color-principal: #fafafa;
     --color-secundario: #666666;
-    --color-terceario: #2B29A7;
+    --color-terceario: #4c49e7;
     --color-cuartario: #D9D9D9;
     --color-quinto: #060606;
 
@@ -57,4 +57,65 @@ body{
     font-weight: 700;
     padding: 1% 2%;
     border-radius: 10px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.contenido_banner{
+    background-color: #D9D9D9;
+    height: 500px;
+}
+.contenido_banner_info{
+display: flex;
+justify-content: space-between;
+margin: 0 7%;
+gap: 4%;
+}
+
+.contenido_banner_info_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.contenido_banner_info_texto_nombre{
+    font-family: var(--fuente-quinta);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.contenido_banner_info_nombre_destacado{
+    font-family: var(--fuente-cuartaria);
+    font-size: 3.43rem;
+    font-weight: 700;
+    color: var(--color-terceario);
+}
+
+.contenido_banner_info_texto_profesion{
+    font-family: var(--fuente-quinta);
+    font-weight: 400;
+    font-size: 1.62rem;
+}
+
+.contenido_banner_info_texto_contacto{
+    font-family: var(--fuente-quinta);
+    font-weight: 700;
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 4%;
+}
+
+.contenido_banner_info_imagen{
+    /* O 'absolute' si prefieres fijarla respecto al contenedor */
+    z-index: 1;
+     /* Ajusta el valor para que sobresalga como desees */
+    max-height: 450px;
+    bottom: 0%;
+    align-self:baseline;
+    margin-top: 50px;
 }
